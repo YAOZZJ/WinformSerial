@@ -227,6 +227,7 @@ namespace WindowsForms串口
                     cmbParity.SelectedItem.ToString(),
                     cmbHandShaking.SelectedItem.ToString());
                 SerialPort1.ComReceiveDataEvent += SerialPort1_ComReceiveDataEvent;
+                //取消，改到Form_Load
                 //SerialPort1.ComOpenEvent += SerialPort1_ComComOpenEvent;
                 //SerialPort1.ComCloseEvent += SerialPort1_ComComCloseEvent;
                 btnSendData.Enabled = true;
